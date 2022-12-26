@@ -638,3 +638,11 @@ pub enum Blends {
     #[strum(to_string = "luminosity")]
     Luminosity,
 }
+
+#[derive(EnumString, Display, PartialEq, Eq, PartialOrd, Ord, AsRefStr, IntoStaticStr)]
+pub enum FillRule {
+    #[strum(to_string = "nonzero")]
+    NonZero,
+    #[strum(to_string = "evenodd")]
+    EvenOdd,
+}

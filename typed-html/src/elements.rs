@@ -477,6 +477,8 @@ declare_elements! {
     path {
         d: String,
         pathLength: usize,
+        transform: String,
+        fill-rule: FillRule
     } in [SvgContent, ClipPathContent, DefsContent];
     circle {
         cx: String,
